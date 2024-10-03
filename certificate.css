@@ -1,0 +1,50 @@
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    font-family: 'Times New Roman';
+    background-color: #262525;
+}
+
+* {
+    margin: 0;
+    padding: 5px;
+    box-sizing: border-box;
+    font-family: 'Times New Roman';
+}
+
+.container {
+    display: flex;
+}
+
+.navlist {
+    display: flex;
+    gap: 3rem;
+    height: 10vh;
+    width: 10%;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    list-style: none; /* Removes bullet points */
+    padding: 0; /* Removes extra padding */
+}
+
+.navlist li {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.navlist a {
+    color: pink;
+    text-decoration: none; /* Removes underline from links */
+}
+
+.navlist li a:hover {
+    text-transform: uppercase;
+    font-size: medium;
+    color: pink;
+    text-decoration: none;
+}
