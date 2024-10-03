@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="StyleSheet" href="contact.css">
+    <script src="contact.js"></script>
+    <title>contact</title>
+</head>
+<body>
+
+<div class="container">
+    <ul class="navlist">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="project.html">Project</a></li>
+        <li><a href="certificate.html">Certificate</a></li>
+        <li><a href="contact.html">Contact</a></li>
+    </ul>
+
+    <div class="start">
+        <h1>Contact Me</h1>
+        <p>Fill out the form below, and I'll get back to you as soon as possible. Your message and inquiries mean a lot to me!</p>
+    </div>
+
+    <div class="info">
+        <h2>Send Message</h2>
+        <input type="text" id="name" placeholder="Name" required>
+        <br>
+        <input type="text" id="email" placeholder="Email" required>
+        <br>
+        <textarea rows="5" placeholder="Type Message..." required></textarea>
+        <br>
+        <button onclick="msg()">Send</button>
+    </div>
+</div>
+
+<script>
+    function msg() {
+        alert("Message sent successfully!");
+    }
+</script>
+
+</body>
+</html>
