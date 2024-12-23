@@ -524,8 +524,7 @@ h1 {
   }
   
   .content {
-    justify-content:center ;
-    align-items: center; /* Vertically align items */
+    
     gap: 10px; /* Space between the image and the description */
     
   }
