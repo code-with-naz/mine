@@ -7,19 +7,189 @@
     <title>_Naziya_portfolio_</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+    <script src="contact.js"></script>
+    
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Times New Roman', sans-serif;
+            background-color: #2a2a2a;
+            color: #fff;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: flex-start;
+            
+        }
 
+            .navlist {
+            display: flex;
+            width: 100%;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            gap: 1rem;
+        }
+
+        .navlist li {
+            list-style: none;
+        }
+
+        .navlist li a {
+            text-decoration: none;
+            color: pink;
+            font-size: 1.2rem;
+        }
+
+        .navlist li a:hover {
+            text-transform: uppercase;
+            font-size: medium;
+            color: #ff69b4; /* Lighter pink on hover */
+        }
+
+        .container1 {
+            text-align: center;
+            
+            max-width: 900px;
+            padding: 20px;
+        }
+
+        .profile-pic {
+            border-radius: 50%;
+            width: 300px;  /* Increased size */
+            height: 300px; /* Increased size */
+            object-fit: cover;
+            border: 4px solid lightseagreen;
+            margin-top: 20px;
+            box-shadow: 0 0 15px rgba(255, 215, 0, 0.5);
+            transition: transform 0.3s ease; /* Animation effect */
+            background-repeat: no-repeat;
+            border: .1rem solid white;
+            box-shadow: 0 0 1rem  #fff , 
+            inset 0 0 1rem #fff,
+            0 0 2rem #5DB9EE,
+            inset 0 0 2rem #5DB9EE,
+            0 0 4rem #5DB9EE,
+            inset 0 0 4rem #5DB9EE;
+        }
+
+        .profile-pic:hover {
+            transform: scale(1.1); /* Scale effect on hover */
+        }
+
+        h1 {
+            font-size: 3rem;
+            margin-top: 30px;
+            color: rgb(192, 87, 104);
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+            text-transform: uppercase;
+            animation: fadeIn 1s ease-in-out; /* Animation on load */
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(-20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        p {
+            font-size: 1.2rem;
+            line-height: 1.8;
+            color: #d3d3d3;
+            text-align: justify;
+            margin-top: 20px;
+            animation: slideIn 1s ease-in-out; /* Animation on load */
+        }
+
+        h4{
+            font-size: 1.2rem;
+            line-height: 1.8;
+            color: #d3d3d3;
+            text-align: justify;
+            margin-top: 20px;
+            animation: slideIn 1s ease-in-out;
+        }
+
+        @keyframes slideIn {
+            from {
+                opacity: 0;
+                transform: translateX(-100%);
+            }
+            to {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+
+        .skills {
+            margin-top: 50px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .skill-box {
+            background-color: #333;
+            padding: 15px 25px;
+            border-radius: 10px;
+            border: 2px solid lightseagreen;
+            box-shadow: 0 0 15px rgba(255, 215, 0, 0.3);
+            text-align: center;
+            transition: transform 0.3s; /* Animation effect */
+        }
+
+        .skill-box:hover {
+            transform: translateY(-5px); /* Slight lift on hover */
+        }
+
+        .skill-box h3 {
+            color: lightseagreen;
+            font-size: 1.5rem;
+            margin-bottom: 10px;
+        }
+
+        .skill-box p {
+            color: #d3d3d3;
+            font-size: 1rem;
+        }
+
+        footer {
+            margin-top: 50px;
+            font-size: 0.9rem;
+            color: #999;
+            text-align: center; /* Center footer text */
+        }
+
+    </style>
 </head>
 
 <body>
     
+    <!-- <div class="sidebar" id="mySidebar" style="display:none">
+        <button onclick="close()">Close &times;</button>
+        
+        
+       <a href="about.html" style="color:pink";>About</a>
+       <a href="project.html" style="color:pink";>Project</a>
+       <a href="certificate.html" style="color:pink";>Certificate</a>
+       <a href="contact.html" style="color:pink";>Contact</a>
+
+        
+
+    </div>
+
+    <div class="mainpage">
+        <button class="w3-button w3-teal w3-xlarge" onclick="open()">☰</button>
+        </div> -->
     <div class="container">
-        <!-- <ul class="navlist">
-            <li><a href="index.html" style="color:pink";>Home</a></li>
-            <li><a href="about.html" style="color:pink";>About</a></li>
-            <li><a href="project.html" style="color:pink";>Project</a></li>
-            <li><a href="certificate.html" style="color:pink";>Certificate</a></li>
-            <li><a href="contact.html" style="color:pink";>Contact</a></li>
-        </ul> -->
+        
 
         <div class="left_bg">
             <div class="icon" style="color: white";>
@@ -48,7 +218,7 @@
 
         <div class="info">
             <h2>Hello I Am <span>Naziya Patel</span></h2>
-            <h1>FullStack Developer</h1>
+            <h1>Software  Developer</h1>
             <p>Detail-oriented, analytical, and self-driven programmer with extensive experience building user-facing websites and applications. Efficient and knowledgeable coder with skills in HTML, CSS, PHP,JavaScript,Android and Dart programming languages.</p>
 
             <div class="btn">
@@ -57,17 +227,233 @@
         </div>
 
         </div>
+    </div>
 
-        <div class="right_bg"></div>
-
-        <div class="design">
-        <div class="circle"></div>
-        <div class="circle"></div>
+    <div class="container1">
         
+        <img src="pic.jpg" alt="Profile Picture" class="profile-pic">
+        
+        <h1>About Me</h1>
+
+        <p>
+            Hello! I'm Naziya Patel, a passionate full-stack developer, mobile application developer, and a tech enthusiast.
+            I specialize in building dynamic web and mobile applications using a wide range of technologies.
+            With a background in both front-end and back-end development, I bring a holistic approach to creating
+            seamless user experiences. When I’m not coding, I enjoy exploring new technologies, solving complex problems, 
+            and sharing knowledge with the community.
+        </p>
+
+        <div class="skills">
+            <div class="skill-box">
+                <h3>Web Development</h3>
+                <p>HTML, CSS, JavaScript, Angular, Node.js</p>
+            </div>
+            <div class="skill-box">
+                <h3>Mobile Development</h3>
+                <p>Flutter, Java, iOS, Android</p>
+            </div>
+            <div class="skill-box">
+                <h3>Database Management</h3>
+                <p>MongoDB, MySQL, SQLite</p>
+            </div>
+            <div class="skill-box">
+                <h3>Other Skills</h3>
+                <p>Git, Python</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="project">
+        <h1>Project</h1>
+        <br>
+        <h2 style="color: lightseagreen; margin-top: 10px;">Online Matrimonial Website</h2>
+      
+        <div class="content">
+            <div class="img2">
+          <img src="Picture1.png" alt="Matrimonial Website" class="image"><br><br>
+          <img src="Picture4.png" alt="Matrimonial Website" class="image">
+        </div>
+          <div class="description">
+            <p>
+              An online matrimonial website serves as a digital platform that connects individuals seeking life partners,
+              catering to diverse communities, religions, cultures, and preferences. It simplifies the matchmaking process
+              by leveraging technology to help users find compatible matches efficiently and conveniently.
+            </p>
+            <h4>Language Used: HTML, CSS, PHP</h4>
+            <h4>Database: MySQL      </h4>
+           
+          </div>
+        </div>
+      </div>
+
+      <div class="project">
+        
+        <h2 style="color: lightseagreen; "> Workforce Management App </h2>
+      
+        <div class="content">
+            <div class="img2">
+                <video width="200px"  height="300px" controls>
+                    <source src="workforce.mp4" type="video/mp4">
+                </video>
+                </div>
+          <div class="description">
+            <p>A Workforce Management (WFM) application is a comprehensive solution designed to optimize workforce efficiency, track employee performance, and manage day-to-day operations. Built using modern technologies, this application provides an intuitive platform for managing tasks, schedules, attendance, and payroll while fostering better collaboration and productivity.
+
+
+                </p>
+            <h4> Frontend: Flutter(Dart)</h4>
+            <h4> Server: NodeJS</h4>
+            <h4> Database: MongoDB</h4>
+            
+          </div>
+        </div>
+      </div>
+
+
+      <div class="project">
+        
+        <h2 style="color: lightseagreen;">Fitness First Website </h2>
+      
+        <div class="content">
+            <div class="img2">
+          <img src="fitness.png" alt="Matrimonial Website" class="image"><br><br>
+          <img src="fitness2.png" alt="Matrimonial Website" class="image"><br><br>
+          <!-- <img src="fitness3.png" alt="Matrimonial Website" class="image"> -->
+        </div>
+          <div class="description">
+            <p>
+                The Fitness First Gym website is a dynamic, interactive web application built using Angular. Designed to provide users with an engaging platform to explore fitness programs, membership plans, and facility details, it aims to enhance the overall user experience with a modern and responsive interface.The website also features a seamless registration process for new members, allowing them to easily sign up for programs and book classes. </p>
+            <h4> Framework Used: Angular JS</h4>
+        
+            
+          </div>
+        </div>
+      </div>
+<!-- 
+      <div class="project">
+        
+        <h2 style="color: lightseagreen;">Fitness First Website </h2>
+      
+        <div class="content">
+            <div class="img2">
+          <img src="fitness.png" alt="Matrimonial Website" class="image"><br><br>
+          <img src="fitness2.png" alt="Matrimonial Website" class="image">
+        </div>
+          <div class="description">
+            <p>
+                The Fitness First Gym website is a dynamic, interactive web application built using Angular. Designed to provide users with an engaging platform to explore fitness programs, membership plans, and facility details, it aims to enhance the overall user experience with a modern and responsive interface.
+            </p>
+            <h4> Framework Used: Angular JS</h4>
+        
+            
+          </div> -->
+        </div>
+      </div>
+      
+    <div class="grid-container">
+        <h1>CERTIFICATE</h1>
+        <h1 style="color: lightseagreen;">Training Representative</h1>
+        <div class="grid-item">
+            <img src="TR.jpg" width="100%" alt="NPTEL Java Certificate">
+        </div>
+
+        
+        <h1 style="color: lightseagreen;">NPTEL JAVA CERTIFICATE</h1>
+        <div class="grid-item">
+            <img src="npteljava.jpg" width="100%" alt="NPTEL Java Certificate">
+        </div>
+
+        <h1 style="color: lightseagreen;">JAVA DEVELOPMENT</h1>
+        <div class="grid-item">
+            <img src="java_development.jpg" width="100%" alt="NPTEL Java Certificate">
+        </div>
+
+        <h1 style="color: lightseagreen;">NPTEL DBMS CERTIFICATE</h1>
+        <div class="grid-item">
+            <img src="nptel_dbms.png" width="100%" alt="NPTEL Java Certificate">
+        </div>
+
+        <h1 style="color: lightseagreen;">Angular DEVELOPMENT</h1>
+        <div class="grid-item">
+            <img src="angular_intern.jpg" width="100%" alt="NPTEL Java Certificate">
+        </div>
+
+        <h1 style="color: lightseagreen;">flipkart</h1>
+        <div class="grid-item">
+            <img src="flipkart.jpg" width="100%" alt="NPTEL Java Certificate">
+        </div>
+
+        <h1 style="color: lightseagreen;">Logo design </h1>
+        <div class="grid-item">
+            <img src="logo.jpg" width="100%" alt="NPTEL Java Certificate">
+        </div>
+
+        <h1 style="color: lightseagreen;">slogan writing</h1>
+        <div class="grid-item">
+            <img src="slogan.jpg" width="100%" alt="NPTEL Java Certificate">
+        </div>
+
+        <h1 style="color: lightseagreen;">pepshe supply chain star program</h1>
+        <div class="grid-item">
+            <img src="supply_chain.jpg" width="100%" alt="NPTEL Java Certificate">
+        </div>
+
+        <h1 style="color: lightseagreen;">Advanced CPP training</h1>
+        <div class="grid-item">
+            <img src="c++.jpg" width="100%" alt="NPTEL Java Certificate">
+        </div>
+
+        <h1 style="color: lightseagreen;">Youth leadership for climate action</h1>
+        <div class="grid-item">
+            <img src="climate.png" width="100%" alt="NPTEL Java Certificate">
+        </div>
+
+        <h1 style="color: lightseagreen;">Accenture innovation challenge online bootcamp</h1>
+        <div class="grid-item">
+            <img src="Hack2skill-Certificate.png" width="100%" alt="NPTEL Java Certificate">
         </div>
 
 
+
     </div>
+
+
+    <div class="start">
+        <h1>Contact Me</h1>
+        <p>Fill out the form below, and I'll get back to you as soon as possible. Your message and inquiries mean a lot to me!</p>
+    </div>
+
+    <div class="info1">
+        <h2>Send Message</h2>
+        <input type="text" id="name" placeholder="Name" required>
+        <br>
+        <input type="text" id="email" placeholder="Email" required>
+        <br>
+        <textarea rows="5" placeholder="Type Message..." required></textarea>
+        <br>
+        <button onclick="msg()" class="contactbtn">Send</button>
+    </div>
+
+
+<script>
+    function msg() {
+        alert("Message sent successfully!");
+    }
+
+    function open(){
+         document.getElementById("mySidebar").style.display = "block"
+    }
+
+    function close(){
+         document.getElementById("mySidebar").style.display = "none"
+    }
+</script>
+
+    <footer>
+        © 2024 Naziya Patel | Full-Stack Web Developer & Mobile Application Developer
+    </footer>
+
+
     
 </body>
 </html>

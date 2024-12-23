@@ -3,19 +3,24 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Times New Roman';
+    align-items: center;
 }
 
 @media (max-width: 480px) {
     body {
       font-size: 14px;
       padding: 10px;
+      
     }
   }
 
+  
+
 .container{
-    min-height: 50vh;
+   
     width: 100%;
     display: flex;
+    
 
 }
 
@@ -42,28 +47,33 @@
     
 }
 
+.sidebar{
+  color: #a31651;
+}
+
 
 /* combine both class for same properties */
 .left_bg , .right_bg{
-    height: 100vh;
+    height: 60vh;
     display: flex;
     align-items: center;
+    justify-content: center;
 
 }
 
 .left_bg{
     background-color: #262525;
-    width: 70%;
+    width: 100%;
     padding-left: 3rem;
-    
+    align-items: center;
 
 }
 
-.right_bg{
+/* .right_bg{
     background:linear-gradient(-45deg,#5DB9EE,#262525 70%);
     width: 30%;
 
-}
+} */
 
 
 .icon .fa-brands:hover{
@@ -185,3 +195,198 @@
     inset 0 0 4rem #5DB9EE;
 }
 
+.grid-container {
+    display: grid;
+    gap: 20px; /* Space between grid items */
+    padding: 10px;
+}
+
+.grid-item {
+    background-color: #f0f0f0;
+    padding:  10px;
+    border: 1px solid #ccc;
+    text-align: center;
+    margin-top: 5px;
+    transition: transform 0.3s ease;
+}
+
+
+.grid-item:hover {
+    transform: scale(1.05); /* Slight zoom effect on hover */
+}
+
+h1 {
+    text-align: center;
+    color: rgb(252, 65, 96);
+    font-size: 2.5rem;
+    margin:  0;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+.start {
+    text-align: center;            
+    margin-top: 10px;              
+    color: white;
+    
+  }
+  
+  .start h1 {
+    font-size: 3rem;
+    color:lightseagreen;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+    margin-bottom: 10px;
+  }
+  
+  .start p {
+    font-size: 1.2rem;
+    color: #D3D3D3;
+    margin-top: 10px;
+    max-width: 600px;
+    line-height: 1.5;
+  }
+  
+  .info1 {
+    border: 2px solid pink;      
+    border-radius: 20px;
+    padding: 30px;                
+    width: 300px;                 
+    display: flex;                
+    flex-direction: column;       
+    justify-content: center;      
+    align-items: center;          
+    background-color: #333;
+    margin-top: 10px;
+    box-shadow: 0px 4px 20px rgba(255, 215, 0, 0.5);
+  }
+  
+  .info1 h2 {
+    color: rgb(240, 60, 135);
+    margin-bottom: 20px;
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
+  }
+  
+  input[type="text"], textarea {
+    width: 100%;
+    box-sizing: border-box;        
+    border-radius: 10px;
+    border: 2px solid pink;
+    padding: 5px;
+    margin-bottom: 10px;
+    font-size: 1rem;
+    background-color: #444;
+    color: white;
+  }
+  
+  textarea {
+    resize: none;
+  }
+  
+  button.contactbtn {
+    margin-top: 10px;             
+    width: 100px;
+    background-color:  pink;
+    font-weight: bold;
+    border-radius: 10px;
+    border: 2px solid pink;
+    height: 40px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  button.contactbtn:hover {
+    background-color: #a31651;
+    color: white;
+    border: 2px solid #a31651;
+  }
+  
+  button.contactbtn:focus {
+    outline: none;
+  }
+  
+  #name, #email {
+    border-radius: 10px;
+    width: 100%;
+    height: 40px;
+    padding: 10px;
+    border: 2px solid pink;
+    background-color: #444;
+    color: white;
+  }
+
+  .project {
+    padding: 20px;
+  }
+  
+  .content {
+    display: flex; /* Flexbox to align the image and description side by side */
+    align-items: center; /* Vertically align items */
+    gap: 20px; /* Space between the image and the description */
+  }
+  
+  .image {
+    width: 150px; /* Adjust the size of the image */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 10px; /* Optional: Add rounded corners */
+  }
+  
+  .description {
+    max-width: 500px; /* Limit the width of the description */
+  }
+  
+  .description p {
+    margin: 5px 0 10px; /* Adjust spacing around the paragraph */
+    font-size: 1rem;
+    color: #555; /* Optional: Add a subtle text color */
+  }
+  
+  .project {
+    padding: 20px;
+  }
+  
+  .content {
+    display: flex; /* Flexbox to align the image and description side by side */
+    align-items: center; /* Vertically align items */
+    gap: 10px; /* Space between the image and the description */
+  }
+
+  
+  .image {
+    width: 200px; /* Adjust the size of the image */
+    height: 200; /* Maintain aspect ratio */
+    border-radius: 10px; /* Optional: Add rounded corners */
+    margin-top: 10px;
+  }
+  
+  .description {
+    max-width: 500px; /* Limit the width of the description */
+  }
+
+  .description h1{
+    font-size: 1.2rem;
+    line-height: 1.8;
+    color: #d3d3d3;
+    text-align: justify;
+    
+    animation: slideIn 1s ease-in-out; 
+  }
+  
+  .description p {
+            font-size: 1rem;
+            line-height: 1.8;
+            color: #d3d3d3;
+            text-align: justify;
+            
+            animation: slideIn 1s ease-in-out; 
+  }
+  
+  .description h4 {
+            font-size: 1rem;
+            line-height: 0.8;
+            color: #d3d3d3;
+            text-align: justify;
+            
+            animation: slideIn 1s ease-in-out; 
+  }
+  
