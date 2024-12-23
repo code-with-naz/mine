@@ -585,14 +585,5 @@ h1 {
   video{
     margin-left: 150px;
   }
-.img2{
-  font-size: 1.2rem;
-            line-height: 1.8;
-            color: #d3d3d3;
-            text-align: justify;
-            margin-top: 20px;
-            animation: slideIn 1s ease-in-out; /* Animation on load */
-            margin-left: 40%;
-}
-  
+
   
