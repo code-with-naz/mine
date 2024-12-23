@@ -9,6 +9,9 @@ body {
   background-color:  #262525;
 }
 }
+*{
+  background-color:  #262525;
+}
 .container {
   width: 100%;
   display: flex;

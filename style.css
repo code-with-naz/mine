@@ -497,7 +497,7 @@ h1 {
   
   .content {
     
-    align-items: center; /* Vertically align items */
+    
     gap: 20px; /* Space between the image and the description */
   }
   
@@ -510,7 +510,7 @@ h1 {
   }
   
   .description {
-    max-width: 500px; /* Limit the width of the description */
+    max-width: 100%; /* Limit the width of the description */
   }
   
   .description p {
@@ -536,18 +536,18 @@ h1 {
     height: 200; /* Maintain aspect ratio */
     border-radius: 10px; /* Optional: Add rounded corners */
     margin-top: 10px;
-    margin-left: 30px;
+    margin-left: 40px;
   }
   
   .description {
-    max-width: 500px; /* Limit the width of the description */
+    max-width: 100%; /* Limit the width of the description */
   }
 
   .description h1{
     font-size: 1.2rem;
     line-height: 1.8;
     color: #d3d3d3;
-    text-align: justify;
+    
     margin-top: 30px;
     animation: slideIn 1s ease-in-out; 
   }
@@ -556,8 +556,8 @@ h1 {
             font-size: 1rem;
             line-height: 1.8;
             color: #d3d3d3;
-            text-align: justify;
-            
+            margin-left: 25%;
+            margin-right: 20%;
             animation: slideIn 1s ease-in-out; 
   }
   
@@ -565,13 +565,18 @@ h1 {
             font-size: 1rem;
             line-height: 0.8;
             color: #d3d3d3;
-            text-align: justify;
+            margin-left: 25%;
+            margin-right: 20%;
             
             animation: slideIn 1s ease-in-out; 
   }
 
   video{
     margin-left: 150px;
+  }
+
+  .img2{
+    margin-left: 35%;
   }
 
   
