@@ -501,33 +501,4 @@ h1 {
     gap: 20px; /* Space between the image and the description */
   }
   
-  .image {
-    margin-left: 30px;
-    width: 150px; /* Adjust the size of the image */
-    height: auto; /* Maintain aspect ratio */
-    border-radius: 10px; /* Optional: Add rounded corners */
-    
-  }
-  
-  .description {
-    max-width: 100%; /* Limit the width of the description */
-  }
-  
-  .description p {
-    margin: 5px 0 10px; /* Adjust spacing around the paragraph */
-    font-size: 1rem;
-    color: #555; /* Optional: Add a subtle text color */
-  }
-  
-  .project {
-    padding: 20px;
-  }
-  
-  .content {
-    
-    gap: 10px; /* Space between the image and the description */
-    
-  }
-
-  
   
