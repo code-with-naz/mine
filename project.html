@@ -3,13 +3,41 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    
+    <link rel="stylesheet" href="project.css">
+    <link rel="stylesheet" href="project_mobile.css">
     <title>Project</title>
+
+    
 </head>
 <body>
+
+  <div class="container">
+    <ul class="navlist">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="project.html">Project</a></li>
+        <li><a href="certificate.html">Certificate</a></li>
+        <li><a href="contact.html">Contact</a></li>
+    </ul>
+</div>
+
+<div class="menu-btn" onclick="openSidebar()">
+  <i class="fas fa-bars"></i>
+</div>
+
+<div class="sidebar" id="sidebar">
+  <span class="close-btn" onclick="closeSidebar()">&times;</span>
+  <a href="index.html">Home</a>
+  <a href="about.html">About</a>
+  <a href="project.html">Project</a>
+  <a href="certificate.html">Certificate</a>
+  <a href="contact.html">Contact</a>
+</div>
+
     <div class="project">
         <h1>Project</h1>
-        <h2 style="color: lightseagreen;">Online Matrimonial Website</h2>
+        <h2 >Online Matrimonial Website</h2>
       
         <div class="content">
             <div class="img2">
@@ -35,8 +63,8 @@
       
         <div class="content">
             <div class="img2">
-          <img src="fitness.png" alt="Matrimonial Website" class="image"><br><br>
-          <img src="fitness2.png" alt="Matrimonial Website" class="image">
+              <video width="200px"  height="300px"  controls>
+                <source src="workforce.mp4" type="video/mp4">
         </div>
           <div class="description">
             <p>A Workforce Management (WFM) application is a comprehensive solution designed to optimize workforce efficiency, track employee performance, and manage day-to-day operations. Built using modern technologies, this application provides an intuitive platform for managing tasks, schedules, attendance, and payroll while fostering better collaboration and productivity.
@@ -73,24 +101,20 @@
         </div>
       </div>
 
-      <div class="project">
-        
-        <h2 style="color: lightseagreen;">Fitness First Website </h2>
       
-        <div class="content">
-            <div class="img2">
-          <img src="fitness.png" alt="Matrimonial Website" class="image"><br><br>
-          <img src="fitness2.png" alt="Matrimonial Website" class="image">
-        </div>
-          <div class="description">
-            <p>
-                The Fitness First Gym website is a dynamic, interactive web application built using Angular. Designed to provide users with an engaging platform to explore fitness programs, membership plans, and facility details, it aims to enhance the overall user experience with a modern and responsive interface.
-            </p>
-            <h4> Framework Used: Angular JS</h4>
-        
-            
-          </div>
         </div>
       </div>
+
+      <script>
+       
+    
+        function openSidebar() {
+            document.getElementById("sidebar").style.display = "block";
+        }
+    
+        function closeSidebar() {
+            document.getElementById("sidebar").style.display = "none";
+        }
+    </script>
 </body>
 </html>

@@ -4,193 +4,45 @@
 <head>
     
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+
     <title>_Naziya_portfolio_</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
     <script src="contact.js"></script>
+    <link rel="stylesheet" href="mobile.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     
     <style>
-        body {
-            
-            font-family: 'Times New Roman', sans-serif;
-            background-color: #2a2a2a;
-            color: #fff;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: flex-start;
-            
-        }
-
-            .navlist {
-            display: flex;
-            width: 100%;
-            justify-content: center;
-            align-items: center;
-            flex-direction: column;
-            gap: 1rem;
-        }
-
-        .navlist li {
-            list-style: none;
-        }
-
-        .navlist li a {
-            text-decoration: none;
-            color: pink;
-            font-size: 1.2rem;
-        }
-
-        .navlist li a:hover {
-            text-transform: uppercase;
-            font-size: medium;
-            color: #ff69b4; /* Lighter pink on hover */
-        }
-
-        .container1 {
-            text-align: center;
-            
-            max-width: 900px;
-            padding: 20px;
-        }
-
-        .profile-pic {
-            border-radius: 50%;
-            width: 300px;  /* Increased size */
-            height: 300px; /* Increased size */
-            object-fit: cover;
-            border: 4px solid lightseagreen;
-            margin-top: 20px;
-            box-shadow: 0 0 15px rgba(255, 215, 0, 0.5);
-            transition: transform 0.3s ease; /* Animation effect */
-            background-repeat: no-repeat;
-            border: .1rem solid white;
-            box-shadow: 0 0 1rem  #fff , 
-            inset 0 0 1rem #fff,
-            0 0 2rem #5DB9EE,
-            inset 0 0 2rem #5DB9EE,
-            0 0 4rem #5DB9EE,
-            inset 0 0 4rem #5DB9EE;
-        }
-
-        .profile-pic:hover {
-            transform: scale(1.1); /* Scale effect on hover */
-        }
-
-        h1 {
-            font-size: 3rem;
-            margin-top: 30px;
-            color: rgb(192, 87, 104);
-            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
-            text-transform: uppercase;
-            animation: fadeIn 1s ease-in-out; /* Animation on load */
-        }
-
-        @keyframes fadeIn {
-            from {
-                opacity: 0;
-                transform: translateY(-20px);
-            }
-            to {
-                opacity: 1;
-                transform: translateY(0);
-            }
-        }
-
-        p {
-            font-size: 1.2rem;
-            line-height: 1.8;
-            color: #d3d3d3;
-            text-align: justify;
-            margin-top: 20px;
-            animation: slideIn 1s ease-in-out; /* Animation on load */
-        }
-
-        h4{
-            font-size: 1.2rem;
-            line-height: 1.8;
-            color: #d3d3d3;
-            text-align: justify;
-            margin-top: 20px;
-            animation: slideIn 1s ease-in-out;
-        }
-
-        @keyframes slideIn {
-            from {
-                opacity: 0;
-                transform: translateX(-100%);
-            }
-            to {
-                opacity: 1;
-                transform: translateX(0);
-            }
-        }
-
-        .skills {
-            margin-top: 50px;
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-            gap: 20px;
-        }
-
-        .skill-box {
-            background-color: #333;
-            padding: 15px 25px;
-            border-radius: 10px;
-            border: 2px solid lightseagreen;
-            box-shadow: 0 0 15px rgba(255, 215, 0, 0.3);
-            text-align: center;
-            transition: transform 0.3s; /* Animation effect */
-        }
-
-        .skill-box:hover {
-            transform: translateY(-5px); /* Slight lift on hover */
-        }
-
-        .skill-box h3 {
-            color: lightseagreen;
-            font-size: 1.5rem;
-            margin-bottom: 10px;
-        }
-
-        .skill-box p {
-            color: #d3d3d3;
-            font-size: 1rem;
-        }
-
-        footer {
-            margin-top: 50px;
-            font-size: 0.9rem;
-            color: #999;
-            text-align: center; /* Center footer text */
-        }
-
+     
     </style>
+
 </head>
 
 <body>
     
-    <!-- <div class="sidebar" id="mySidebar" style="display:none">
-        <button onclick="close()">Close &times;</button>
-        
-        
-       <a href="about.html" style="color:pink";>About</a>
-       <a href="project.html" style="color:pink";>Project</a>
-       <a href="certificate.html" style="color:pink";>Certificate</a>
-       <a href="contact.html" style="color:pink";>Contact</a>
+        <div class="container">
+            <ul class="navlist">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="project.html">Project</a></li>
+                <li><a href="certificate.html">Certificate</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+</div>
 
-        
+<!-- <div class="menu-btn" onclick="openSidebar()">
+    <i class="fas fa-bars"></i>
+</div>
 
-    </div>
-
-    <div class="mainpage">
-        <button class="w3-button w3-teal w3-xlarge" onclick="open()">☰</button>
-        </div> -->
-    <div class="container">
-        
-
+<div class="sidebar" id="sidebar">
+    <span class="close-btn" onclick="closeSidebar()">&times;</span>
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="project.html">Project</a>
+    <a href="certificate.html">Certificate</a>
+    <a href="contact.html">Contact</a>
+</div> -->
         <div class="left_bg">
             <div class="icon" style="color: white";>
 
@@ -266,7 +118,7 @@
     <div class="project">
         <h1>Project</h1>
         <br>
-        <h2 style="color: lightseagreen; margin-top: 10px; margin-left: 40%; font-size: 30px;">Online Matrimonial Website</h2>
+        <h2>Online Matrimonial Website</h2>
       
         <div class="content">
             <div class="img2">
@@ -288,11 +140,11 @@
 
       <div class="project">
         
-        <h2 style="color: lightseagreen; margin-left: 40%; "> Workforce Management App </h2>
+        <h2> Workforce Management App </h2>
       
         <div class="content">
             <div class="img2">
-                <video width="200px"  height="300px"  controls>
+                <video     controls>
                     <source src="workforce.mp4" type="video/mp4">
                 </video>
                 </div>
@@ -312,7 +164,7 @@
 
       <div class="project">
         
-        <h2 style="color: lightseagreen; margin-left: 45%;">Fitness First Website </h2>
+        <h2>Fitness First Website </h2>
       
         <div class="content">
             <div class="img2">
@@ -350,66 +202,66 @@
       </div>
       
     <div class="grid-container">
-        <h1>CERTIFICATE</h1>
-        <h1 style="color: lightseagreen;">Training Representative</h1>
+        <h2>CERTIFICATE</h2>
+        <h1 >Training Representative</h1>
         <div class="grid-item">
-            <img src="TR.jpg" width="100%" alt="NPTEL Java Certificate">
+            <img src="TR.jpg"  alt="NPTEL Java Certificate">
         </div>
 
         
-        <h1 style="color: lightseagreen;">NPTEL JAVA CERTIFICATE</h1>
+        <h1 >NPTEL JAVA CERTIFICATE</h1>
         <div class="grid-item">
-            <img src="npteljava.jpg" width="100%" alt="NPTEL Java Certificate">
+            <img src="npteljava.jpg"  alt="NPTEL Java Certificate">
         </div>
 
-        <h1 style="color: lightseagreen;">JAVA DEVELOPMENT</h1>
+        <h1>JAVA DEVELOPMENT</h1>
         <div class="grid-item">
-            <img src="java_development.jpg" width="100%" alt="NPTEL Java Certificate">
+            <img src="java_development.jpg"  alt="NPTEL Java Certificate">
         </div>
 
-        <h1 style="color: lightseagreen;">NPTEL DBMS CERTIFICATE</h1>
+        <h1>NPTEL DBMS CERTIFICATE</h1>
         <div class="grid-item">
-            <img src="nptel_dbms.png" width="100%" alt="NPTEL Java Certificate">
+            <img src="nptel_dbms.png"  alt="NPTEL Java Certificate">
         </div>
 
-        <h1 style="color: lightseagreen;">Angular DEVELOPMENT</h1>
+        <h1>Angular DEVELOPMENT</h1>
         <div class="grid-item">
-            <img src="angular_intern.jpg" width="100%" alt="NPTEL Java Certificate">
+            <img src="angular_intern.jpg" alt="NPTEL Java Certificate">
         </div>
 
-        <h1 style="color: lightseagreen;">flipkart</h1>
+        <h1>flipkart</h1>
         <div class="grid-item">
-            <img src="flipkart.jpg" width="100%" alt="NPTEL Java Certificate">
+            <img src="flipkart.jpg"  alt="NPTEL Java Certificate">
         </div>
 
-        <h1 style="color: lightseagreen;">Logo design </h1>
+        <h1>Logo design </h1>
         <div class="grid-item">
-            <img src="logo.jpg" width="100%" alt="NPTEL Java Certificate">
+            <img src="logo.jpg"  alt="NPTEL Java Certificate">
         </div>
 
-        <h1 style="color: lightseagreen;">slogan writing</h1>
+        <h1>slogan writing</h1>
         <div class="grid-item">
-            <img src="slogan.jpg" width="100%" alt="NPTEL Java Certificate">
+            <img src="slogan.jpg"  alt="NPTEL Java Certificate">
         </div>
 
-        <h1 style="color: lightseagreen;">pepshe supply chain star program</h1>
+        <h1>pepshe supply chain star program</h1>
         <div class="grid-item">
-            <img src="supply_chain.jpg" width="100%" alt="NPTEL Java Certificate">
+            <img src="supply_chain.jpg"  alt="NPTEL Java Certificate">
         </div>
 
-        <h1 style="color: lightseagreen;">Advanced CPP training</h1>
+        <h1>Advanced CPP training</h1>
         <div class="grid-item">
-            <img src="c++.jpg" width="100%" alt="NPTEL Java Certificate">
+            <img src="c++.jpg"  alt="NPTEL Java Certificate">
         </div>
 
-        <h1 style="color: lightseagreen;">Youth leadership for climate action</h1>
+        <h1>Youth leadership for climate action</h1>
         <div class="grid-item">
-            <img src="climate.png" width="100%" alt="NPTEL Java Certificate">
+            <img src="climate.png" alt="NPTEL Java Certificate">
         </div>
 
-        <h1 style="color: lightseagreen;">Accenture innovation challenge online bootcamp</h1>
+        <h1>Accenture innovation challenge online bootcamp</h1>
         <div class="grid-item">
-            <img src="Hack2skill-Certificate.png" width="100%" alt="NPTEL Java Certificate">
+            <img src="Hack2skill-Certificate.png"  alt="NPTEL Java Certificate">
         </div>
 
 
@@ -439,17 +291,17 @@
         alert("Message sent successfully!");
     }
 
-    function open(){
-         document.getElementById("mySidebar").style.display = "block"
+    function openSidebar() {
+        document.getElementById("sidebar").style.display = "block";
     }
 
-    function close(){
-         document.getElementById("mySidebar").style.display = "none"
+    function closeSidebar() {
+        document.getElementById("sidebar").style.display = "none";
     }
 </script>
 
     <footer>
-        © 2024 Naziya Patel | Full-Stack Web Developer & Mobile Application Developer
+        © 2025 Naziya Patel | Full-Stack Web Developer & Mobile Application Developer
     </footer>
 
 

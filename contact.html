@@ -3,28 +3,46 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="StyleSheet" href="contact.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    
+    <link rel="stylesheet" href="cnt.css">
     <script src="contact.js"></script>
-    <title>contact</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="contact.css">
+    <title>contact</title> 
+        
 </head>
 <body>
 
 <div class="container">
-    <!-- <ul class="navlist">
+    <ul class="navlist">
         <li><a href="index.html">Home</a></li>
         <li><a href="about.html">About</a></li>
         <li><a href="project.html">Project</a></li>
         <li><a href="certificate.html">Certificate</a></li>
         <li><a href="contact.html">Contact</a></li>
-    </ul> -->
+    </ul>
+    
+</div>
+    <div class="menu-btn" onclick="openSidebar()">
+        <i class="fas fa-bars"></i>
+    </div>
+    
+    <div class="sidebar" id="sidebar">
+        <span class="close-btn" onclick="closeSidebar()">&times;</span>
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="project.html">Project</a>
+        <a href="certificate.html">Certificate</a>
+        <a href="contact.html">Contact</a>
+    </div>
 
     <div class="start">
         <h1>Contact Me</h1>
         <p>Fill out the form below, and I'll get back to you as soon as possible. Your message and inquiries mean a lot to me!</p>
     </div>
 
-    <div class="info">
+    <div class="info1">
         <h2>Send Message</h2>
         <input type="text" id="name" placeholder="Name" required>
         <br>
@@ -34,14 +52,24 @@
         <br>
         <button onclick="msg()">Send</button>
     </div>
-</div>
 
+
+<footer>
+    © 2025 Naziya Patel | Full-Stack Web Developer & Mobile Application Developer
+</footer>
 <script>
     function msg() {
         alert("Message sent successfully!");
     }
-</script>
 
+    function openSidebar() {
+        document.getElementById("sidebar").style.display = "block";
+    }
+
+    function closeSidebar() {
+        document.getElementById("sidebar").style.display = "none";
+    }
+</script>
 
 
 </body>

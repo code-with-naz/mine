@@ -1,0 +1,201 @@
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    font-family: 'Times New Roman';
+    background-color: #262525;
+    
+  }
+  
+  * {
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Times New Roman';
+  }
+
+  .container {
+    display: flex;
+    
+  }
+  
+  .navlist {
+    font-size: large;
+    display: flex;
+    gap: 3rem;
+    height: 10vh;
+    width: 10%;
+    justify-content: center;
+    align-items: center;
+    position: sticky;
+    list-style: none; /* Removes bullet points */
+    padding: 0; /* Removes extra padding */
+    
+    
+  }
+  
+  
+  .navlist li {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    justify-content: center;
+    
+    
+  }
+  
+  .navlist a {
+    text-align: center;
+     justify-content: center;
+    color: pink;
+    text-decoration: none; /* Removes underline from links */
+  }
+  
+  .navlist li a:hover {
+    text-transform: uppercase;
+    font-size: medium;
+    color: pink;
+    text-decoration: none;
+    text-align: center;
+     justify-content: center;
+  }
+  
+  
+  
+
+  .project h1{
+    color: rgb(230, 60, 89);
+    font-size: 30px;
+    text-align: center;
+   justify-content: center;
+  }
+
+  .project h2{
+    color: lightseagreen; 
+    margin-top: 10px;
+    text-align: center;
+    justify-content: center;
+     font-size: 30px;
+    
+  }
+  
+  .content {
+    
+    
+    gap: 10px; /* Space between the image and the description */
+  }
+  
+  .image {
+    margin-left: 400px;
+    width: 900px; /* Adjust the size of the image */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 10px; /* Optional: Add rounded corners */
+    
+  }
+
+  .description {
+    max-width: 100%; /* Limit the width of the description */
+  }
+  
+  .description h1{
+    font-size: 1.2rem;
+    line-height: 1.8;
+    color: #d3d3d3;
+    
+    margin-top: 30px;
+    animation: slideIn 1s ease-in-out; 
+  }
+  
+  .description p {
+            font-size: 1rem;
+            line-height: 1.8;
+            color: #d3d3d3;
+            margin-left: 25%;
+            margin-right: 20%;
+            animation: slideIn 1s ease-in-out; 
+            font-size: 1.2rem;
+            line-height: 1.8;
+            color: #d3d3d3;
+            text-align: justify;
+            margin-top: 20px;
+            animation: slideIn 1s ease-in-out; /* Animation on load */
+  }
+  
+  .description h4 {
+            font-size: 20px;
+            line-height: 1.6;
+            color: #d3d3d3;
+            margin-left: 25%;
+            margin-right: 20%;
+            animation: slideIn 1s ease-in-out; 
+  }
+
+  video{
+    text-align: center;
+   justify-content: center;
+   margin-top: 15px;
+    width: 500px;
+    margin-left: 600px;
+  }
+
+  .sidebar a {
+    color: white;
+    text-decoration: none;
+    display: block;
+    margin-top: 60px;
+    
+    margin-left: 30px;
+  }
+  .sidebar .close-btn {
+    font-size: 40px;
+    cursor: pointer;
+    display: block;
+    margin-bottom: 20px;
+  }
+  
+  /* General Styles */
+  .sidebar {
+    position: fixed; /* Keep the sidebar fixed on the screen */
+    top: 0;
+    left: 0;
+    width: 200px; /* Adjust width as needed */
+    height: 100%; /* Full height */
+    background-color: #333; /* Sidebar background color */
+    color: white; /* Text color */
+    overflow-y: auto; /* Allow scrolling if content overflows */
+    display: none; /* Initially hidden */
+    z-index: 1000; /* Ensure it appears above other elements */
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  /* When Sidebar is Open */
+  .sidebar.open {
+    display: block; /* Show sidebar when open */
+    transform: translateX(0);
+  }
+  
+  /* Close Button */
+  .close-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 20px;
+    cursor: pointer;
+  }
+  
+  /* Menu Button for Mobile */
+  .menu-btn {
+    position: fixed;
+    top: 10px;
+    left: 10px;
+    font-size: 24px;
+    cursor: pointer;
+    z-index: 1100;
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    border-radius: 50%;
+  }
+  

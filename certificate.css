@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 body {
     display: flex;
     flex-direction: column;
@@ -7,7 +7,9 @@ body {
     margin: 0;
     font-family: 'Times New Roman';
     background-color: #262525;
+    
 }
+
 
 * {
     margin: 0;
@@ -16,15 +18,26 @@ body {
     font-family: 'Times New Roman';
 }
 
+
+
 .container {
     display: flex;
+    width: 100%;
+}
+
+.menu-btn {
+    display: none;
+}
+
+.sidebar {
+    display: none ;
 }
 
 .navlist {
     display: flex;
     gap: 3rem;
     height: 10vh;
-    width: 10%;
+    width: 100%;
     justify-content: center;
     align-items: center;
     position: fixed;
@@ -49,55 +62,99 @@ body {
     color: pink;
     text-decoration: none;
 }
-=======
-body {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin: 0;
-    font-family: 'Times New Roman';
-    background-color: #262525;
-}
 
-* {
-    margin: 0;
-    padding: 5px;
-    box-sizing: border-box;
-    font-family: 'Times New Roman';
-}
-
-.container {
-    display: flex;
-}
-
-.navlist {
-    display: flex;
-    gap: 3rem;
-    height: 10vh;
-    width: 10%;
-    justify-content: center;
-    align-items: center;
-    position: fixed;
-    list-style: none; /* Removes bullet points */
-    padding: 0; /* Removes extra padding */
-}
-
-.navlist li {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-}
-
-.navlist a {
-    color: pink;
-    text-decoration: none; /* Removes underline from links */
-}
-
-.navlist li a:hover {
-    text-transform: uppercase;
-    font-size: medium;
-    color: pink;
+.sidebar a {
+    color: white;
     text-decoration: none;
+    display: block;
+    margin-top: 60px;
+    
+    margin-left: 30px;
+  }
+  .sidebar .close-btn {
+    font-size: 40px;
+    cursor: pointer;
+    display: block;
+    margin-bottom: 20px;
+  }
+  
+  /* General Styles */
+  .sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 200px;
+    height: 100%;
+    background-color: #333;
+    color: white;
+    overflow-y: auto;
+    display: none; /* Hidden by default */
+    z-index: 1000;
+    transition: transform 0.3s ease-in-out;
 }
->>>>>>> master
+.sidebar.open {
+    display: block; /* Visible when the 'open' class is added */
+}
+
+  
+  /* Close Button */
+  .close-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 20px;
+    cursor: pointer;
+  }
+  
+  /* Menu Button for Mobile */
+  .menu-btn {
+    position: fixed;
+    top: 10px;
+    left: 10px;
+    font-size: 24px;
+    cursor: pointer;
+    z-index: 1100;
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    border-radius: 50%;
+  }
+
+  h1 {
+    text-align: center;
+    color: #f179ab; /* Attractive tomato color */
+    font-size: 2.5rem;
+    margin: 60px 0;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+}
+  
+.grid-container {
+    display: grid;
+    gap: 20px; /* Space between grid items */
+    padding: 20px;
+}
+
+.grid-item {
+    background-color: #f0f0f0;
+    padding: 20px;
+    border: 1px solid #ccc;
+    text-align: center;
+    margin-top: 10px;
+    transition: transform 0.3s ease;
+}
+
+.grid-item:hover {
+    transform: scale(1.05); /* Slight zoom effect on hover */
+}
+
+h1 {
+    text-align: center;
+    color: #f179ab; /* Attractive tomato color */
+    font-size: 2.5rem;
+    margin: 20px 0;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+}

@@ -1,9 +1,5 @@
-<<<<<<< HEAD
-function msg(){
-    alert("Thanks for your message!!");
 
-}
-=======
+
 
     function sendMessage() {
         var name = document.getElementById("name").value;
@@ -36,4 +32,3 @@ function msg(){
             alert("Please fill in all fields.");
         }
     }
->>>>>>> master
